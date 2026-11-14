@@ -2,7 +2,7 @@
 Author: lijun.ding 18301370873@163.com
 Date: 2026-11-11 17:54:39
 LastEditors: lijun.ding 18301370873@163.com
-LastEditTime: 2026-11-12 15:57:33
+LastEditTime: 2026-11-12 16:20:55
 FilePath: \app_erp\test_login.py
 Description: 登录测试用例
 接口参数：{"username":"admin","password":"admin123","erpOrPos":"erp"}
@@ -37,6 +37,7 @@ def test_login_passed(username, password, erpOrPos, expect_code, expect_msg):
         verify=False
     )
     res = req.json()
+
     print(f"")
     print("==========================================================================================================")
     print(f"测试账号：{username} | 密码：{password}")
